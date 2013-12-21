@@ -9,6 +9,12 @@
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 
+development:
+  adapter: mysql2
+  encoding: utf8
+  database: myapp_development
+  pool: 5
+  host: localhost
 
 production:
   adapter: postgresql

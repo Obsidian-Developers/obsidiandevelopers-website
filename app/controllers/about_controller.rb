@@ -1,5 +1,5 @@
 class AboutController < ApplicationController
-  def our-work
+  def ourwork
   end
 
   def tutorials

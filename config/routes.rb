@@ -1,5 +1,5 @@
 ObsidianFoundation::Application.routes.draw do
-  get "about/our-work"
+  get "about/ourwork"
   get "about/tutorials"
   get "about/apply"
   get "home/index"
