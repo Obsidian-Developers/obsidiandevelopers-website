@@ -1,72 +1,43 @@
-
-
-
- 
-  <div class="row">
- 
-    <!-- Contact Details -->
-
-    <div> 
-
-    </div>
-    <div class="large-7 columns">
+<div class="row">
+  <div class="large-7 columns">
  
       <h3>Get in Touch!</h3>
       <p>Have an app or website project you want us to work on? Tell us a little bit about it! 
         Leave your name, email, and a brief description of your project idea below. We will quickly respond  with our take on your idea, then discuss the steps involved to move forward with development of your project.</p> 
- 
-      <div class="section-container tabs" data-section>
+      <div class="section-container tabs" >
         <section class="section">
-          <div class="content" data-slug="panel1">
-            <form><%= form_for inquiry do |f| %>
-
-              <div class="row collapse">
-                <div class="large-2 columns">
-                  <label class="inline">Name</label>
-                </div>
-                <div class="large-10 columns">
-                  <%= f.text_field :name %>
-                </div>
-              </div>
-              <div class="row collapse">
-                <div class="large-2 columns">
-                  <label class="inline">Email</label>
-                </div>
-                <div class="large-10 columns">
-                  <%= f.text_field :email %>
-                </div>
-              </div>
-              <div class="row collapse">
-                <div class="large-2 columns">
-                  <label class="inline">Description</label>
-                </div>
-                <div class="large-10 columns">
-                  <%= f.text_area :message %>
-                </div>
-              </div>
-             
-              <%= f.submit "Submit Application", class:"medium radius button"  %>
-            </form> <% end %>
+          <h5 class="title">Contact Obsidian Developers</h5>
+          <%= form_for inquiry do |f| %>
+          <div class="row collapse">
+            <div class="large-2 columns">
+              <%= f.label :name %>
+            </div>
+            <div class="large-10 columns">
+              <%= f.text_field :name %>
+            </div>
           </div>
-        
+          <div class="row collapse">
+            <div class="large-2 columns">
+              <%= f.label :email %>
+            </div>
+            <div class="large-10 columns">
+              <%= f.text_field :email %>
+            </div>
+          </div>
+          <div class="row collapse">
+            <div class="large-2 columns">
+              <%= f.label :message %>
+            </div>
+            <div class="large-10 columns">
+              <%= f.text_area :message %>
+            </div>
+          </div>
+          <%= f.submit "Send", class:"small radius button"  %>
+          <% end %>
+        </section>
       </div>
-    </div>
- 
-    <!-- End Contact Details -->
- 
- 
-    <!-- Sidebar -->
- 
- 
-    
- 
-  <!-- End Main Content and Sidebar -->
- 
- 
-  <!-- Footer -->
- 
-  <footer class="row">
-    
-  </footer>
- 
-  <!-- End Footer -->
+
+  </div>
+</div>
+
+
