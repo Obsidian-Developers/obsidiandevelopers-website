@@ -25,31 +25,7 @@
        </ul>
      </div>
      <%= yield %>
-   </div>
-   <div class="show-for-small-only">
-     <div class="off-canvas-wrap">
-        <div class="inner-wrap">
-          
-          <a class="left-off-canvas-toggle" href="#">Menu</a> 
-          <%= yield %>
-          <!-- Off Canvas Menu -->
-          <aside class="left-off-canvas-menu">
-              <!-- whatever you want goes here -->
-              <ul>
-              <div data-no-turbolink>
-                <li><a href="/">Home</a></li>
-                <li><a href="/about/ourwork">Our Work</a></li>
-                <li><a href="/about/tutorials">Tutorials</a></li>
-                <li><a href="/inquiries/new">Apply Now</a></li>
-              </div>
-              </ul>
-          </aside>
-        </div>
-      </div>
-   </div>
-
-  
-    <footer class="row">
+     <footer class="row">
      <div class="large-12 columns">
        <hr />
        <div class="row">
@@ -70,6 +46,57 @@
        </div>
      </div>
     </footer>
+   </div>
+   <div class="show-for-small-only">
+     <div class="off-canvas-wrap">
+        <div class="inner-wrap">
+          <nav class="tab-bar">
+            <section class="left-small">
+              <a class="left-off-canvas-toggle menu-icon" ><span></span></a>
+            </section>
+
+            <section class="middle tab-bar-section">
+              <h1 class="title">Obsidian Developers</h1>
+            </section>
+
+            
+          </nav>
+           
+          <%= yield %>
+          <!-- Off Canvas Menu -->
+          <aside class="left-off-canvas-menu">
+              <!-- whatever you want goes here -->
+              
+              <ul class="off-canvas-list">
+                <div data-no-turbolink>
+                 <li><label>Site Navigation</label></li>
+
+                  <li><a href="/">Home</a></li>
+                  <li><a href="/about/ourwork">Our Work</a></li>
+                  <li><a href="/about/tutorials">Tutorials</a></li>
+                  <li><a href="/inquiries/new">Apply Now</a></li>
+                  <li><label>Social Media</label></li>
+
+                </div> 
+              </ul>
+              <!-- Place this tag where you want the widget to render. -->
+                <div class="g-follow" data-annotation="vertical-bubble" data-height="24" data-href="https://plus.google.com/110255810300584328180" data-rel="publisher"></div>
+
+                <!-- Place this tag after the last widget tag. -->
+                <script type="text/javascript">
+                  (function() {
+                    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                    po.src = 'https://apis.google.com/js/platform.js';
+                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                  })();
+                </script>
+          </aside>
+        </div>
+      </div>
+   </div>
+
+  
+    
     <%= javascript_include_tag "application" %>
   </body>
 </html>
