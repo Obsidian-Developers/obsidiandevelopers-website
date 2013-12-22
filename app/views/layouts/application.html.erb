@@ -24,28 +24,31 @@
          <li><a href="/inquiries/new" class="medium radius button"><big>Apply</big></a></li>
        </ul>
      </div>
+     <%= yield %>
    </div>
    <div class="show-for-small-only">
-     <nav class="top-bar" data-topbar>
-        <ul class="title-area">
-          <li class="name">
-            <h1><a href="#">Obsidian Developers</a></h1>
-          </li>
-          <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-        </ul>
-
-        <section class="top-bar-section">
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about/ourwork">Our Work</a></li>
-            <li><a href="/about/tutorials">Tutorials</a></li>
-            <li><a href="/inquiries/new">Apply</a></li>
-          </ul>
-        </section>
-      </nav>
+     <div class="off-canvas-wrap">
+        <div class="inner-wrap">
+          
+          <a class="left-off-canvas-toggle" href="#">Menu</a> 
+          <%= yield %>
+          <!-- Off Canvas Menu -->
+          <aside class="left-off-canvas-menu">
+              <!-- whatever you want goes here -->
+              <ul>
+              <div data-no-turbolink>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about/ourwork">Our Work</a></li>
+                <li><a href="/about/tutorials">Tutorials</a></li>
+                <li><a href="/inquiries/new">Apply Now</a></li>
+              </div>
+              </ul>
+          </aside>
+        </div>
+      </div>
    </div>
 
-  <%= yield %>
+  
     <footer class="row">
      <div class="large-12 columns">
        <hr />
