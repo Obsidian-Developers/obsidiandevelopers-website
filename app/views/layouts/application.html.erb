@@ -12,7 +12,7 @@
   </head>
 
   <body>
-   <div class="row">
+   <div class="row show-for-medium-up">
      <div class="large-12 columns" style="padding-top: 10px">
        <h1><a href="/"><big>Obsidian Developers</big></a></h1>
      </div>
@@ -25,6 +25,25 @@
        </ul>
      </div>
    </div>
+   <div class="show-for-small-only">
+     <nav class="top-bar" data-topbar>
+        <ul class="title-area">
+          <li class="name">
+            <h1><a href="#">Obsidian Developers</a></h1>
+          </li>
+          <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+        </ul>
+
+        <section class="top-bar-section">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about/ourwork">Our Work</a></li>
+            <li><a href="/about/tutorials">Tutorials</a></li>
+            <li><a href="/inquiries/new">Apply</a></li>
+          </ul>
+        </section>
+      </nav>
+   </div>
 
   <%= yield %>
     <footer class="row">
@@ -32,8 +51,19 @@
        <hr />
        <div class="row">
          <div class="large-6 columns">
-         
+         <!-- Place this code where you want the badge to render. -->
+              <a target="_new" href="https://plus.google.com/110255810300584328180?prsrc=3"
+                 rel="publisher" target="_top" style="text-decoration:none;display:inline-block;color:#000;text-align:center; font:13px/16px arial,sans-serif;white-space:nowrap;">
+              <span style="display:inline-block;vertical-align:top;margin-right:15px; margin-top:8px;">Follow us on</span>
+              <img src="//ssl.gstatic.com/images/icons/gplus-32.png" alt="Google+" style="border:0;width:32px;height:32px;"/>
+              </a>
+
+                   <a target="_new"style="color:black; font-size:13px; padding-left:10px" href="https://github.com/Obsidian-Developers/obsidiandevelopers-website">View this site's source code on GitHub
+              
+              <img style="width:41px;height:41px;" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR1y1o4B-9pMd8SS12WMT0kneOJpXUDg6cn4K4yGU5TiqPxvKZ6sw"/>
+              </a>
          </div>
+
        </div>
      </div>
     </footer>
