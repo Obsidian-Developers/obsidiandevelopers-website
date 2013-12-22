@@ -5,6 +5,5 @@ class AboutController < ApplicationController
   def tutorials
   end
 
-  def apply
-  end
+  
 end
