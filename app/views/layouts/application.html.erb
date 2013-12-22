@@ -24,29 +24,8 @@
 <li style="padding-right: 10px"><a href="/about/tutorials" class="medium radius button"><big>About Us</big></a><br/></li>
        </ul>
      </div>
-   </div>
-   <div class="show-for-small-only">
-     <nav class="top-bar" data-topbar>
-        <ul class="title-area">
-          <li class="name">
-            <h1><a href="#">Obsidian Developers</a></h1>
-          </li>
-          <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-        </ul>
-
-        <section class="top-bar-section">
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about/ourwork">Our Work</a></li>
-            <li><a href="/about/tutorials">Tutorials</a></li>
-            <li><a href="/inquiries/new">Apply</a></li>
-          </ul>
-        </section>
-      </nav>
-   </div>
-
-  <%= yield %>
-    <footer class="row">
+     <%= yield %>
+     <footer class="row">
      <div class="large-12 columns">
        <hr />
        <div class="row">
@@ -80,6 +59,48 @@
        </div>
      </div>
     </footer>
+   </div>
+   <div class="show-for-small-only">
+     <div class="off-canvas-wrap">
+        <div class="inner-wrap">
+          <nav class="tab-bar">
+            <section class="left-small">
+              <a class="left-off-canvas-toggle menu-icon" ><span></span></a>
+            </section>
+
+            <section class="middle tab-bar-section">
+              <h1 class="title">Obsidian Developers</h1>
+            </section>
+
+            
+          </nav>
+           
+          <%= yield %>
+          <!-- Off Canvas Menu -->
+          <aside class="left-off-canvas-menu">
+              <!-- whatever you want goes here -->
+              
+              <ul class="off-canvas-list">
+                <div data-no-turbolink>
+                 <li><label>Site Navigation</label></li>
+
+                  <li><a href="/">Home</a></li>
+                  <li><a href="/about/ourwork">Our Work</a></li>
+                  <li><a href="/about/tutorials">Tutorials</a></li>
+                  <li><a href="/inquiries/new">Apply Now</a></li>
+                  <li><label>Social Media</label></li>
+                  <li><a href="https://plus.google.com/110255810300584328180/posts">Google Plus</a></li>
+                  <li><a href="https://github.com/Obsidian-Developers">Github</a></li>
+                </div> 
+              </ul>
+              
+          </aside>
+        </div>
+      </div>
+   </div>
+
+  
+    
     <%= javascript_include_tag "application" %>
   </body>
 </html>
