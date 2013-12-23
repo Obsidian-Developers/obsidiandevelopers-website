@@ -1,6 +1,6 @@
 ObsidianFoundation::Application.routes.draw do
   get "about/ourwork"
-  get "about/tutorials"
+  get "about/aboutus"
   get "about/apply"
   get "home/index"
   # The priority is based upon order of creation: first created -> highest priority.

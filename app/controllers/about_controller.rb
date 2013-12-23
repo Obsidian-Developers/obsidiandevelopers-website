@@ -2,7 +2,7 @@ class AboutController < ApplicationController
   def ourwork
   end
 
-  def tutorials
+  def aboutus
   end
 
   
