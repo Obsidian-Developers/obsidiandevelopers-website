@@ -5,5 +5,8 @@ class AboutController < ApplicationController
   def aboutus
   end
 
+  def resources
+  end
+
   
 end
