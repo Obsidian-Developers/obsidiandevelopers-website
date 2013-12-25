@@ -7,6 +7,13 @@
       <div class="section-container tabs" >
         <section class="section">
           <%= form_for inquiry do |f| %>
+          <% if inquiry.errors.any? %>
+            <ul>
+              <% inquiry.errors.full_messages.each do |msg| %>
+                <li><label class="error"><%= msg %></label></li>
+              <% end %>
+            </ul>
+          <% end %>
           <div class="row collapse">
             <div class="large-2 columns">
               <%= f.label :name %>
